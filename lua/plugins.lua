@@ -16,6 +16,11 @@ return require('packer').startup(function()
     run = ':TSUpdate',
     config = 'require("plugins.nvim-treesitter")',
   }
+  use {
+    'p00f/nvim-ts-rainbow',
+    config = 'require("plugins.nvim-ts-rainbow")',
+    after = 'nvim-treesitter',
+  }
   use { 'glacambre/firenvim', run = function() vim.fn['firenvim#install'](0) end }
   use {
     'glepnir/galaxyline.nvim',
