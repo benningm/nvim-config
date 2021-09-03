@@ -19,7 +19,7 @@ vim.o.hlsearch = true
 vim.o.incsearch = true
 vim.o.showmatch = true
 
--- vim.o.mouse = 'a'
+vim.o.mouse = 'a'
 
 -- vim.o.updatetime = 500
 vim.o.number = true
