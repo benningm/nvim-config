@@ -47,6 +47,8 @@ return require('packer').startup(function()
     'neovim/nvim-lspconfig',
     config = 'require("plugins.lspconfig")',
   }
+  use { 'honza/vim-snippets' }
+  use { 'SirVer/ultisnips' }
   use {
     'nvim-lua/completion-nvim',
     config = 'require("plugins.completion")',

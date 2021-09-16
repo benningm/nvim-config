@@ -1,4 +1,5 @@
 vim.g.completion_enable_auto_popup = 0
+vim.g.completion_enable_snippet = 'UltiSnips'
 
 local remap = vim.api.nvim_set_keymap
 
