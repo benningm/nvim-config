@@ -25,3 +25,9 @@ vim.o.mouse = 'a'
 vim.o.number = true
 
 vim.o.encoding = 'UTF-8'
+
+-- Set completeopt to have a better completion experience
+vim.o.completeopt = 'menuone,noinsert,noselect'
+
+-- Avoid showing message extra message when using completion
+vim.opt.shortmess:append('c')

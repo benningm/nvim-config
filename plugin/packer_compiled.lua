@@ -44,8 +44,8 @@ local function save_profiles(threshold)
 end
 
 time([[Luarocks path setup]], true)
-local package_path_str = "/home/werewolf/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/home/werewolf/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/home/werewolf/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/home/werewolf/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
-local install_cpath_pattern = "/home/werewolf/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
+local package_path_str = "/home/benning/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?.lua;/home/benning/.cache/nvim/packer_hererocks/2.1.0-beta3/share/lua/5.1/?/init.lua;/home/benning/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?.lua;/home/benning/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/luarocks/rocks-5.1/?/init.lua"
+local install_cpath_pattern = "/home/benning/.cache/nvim/packer_hererocks/2.1.0-beta3/lib/lua/5.1/?.so"
 if not string.find(package.path, package_path_str, 1, true) then
   package.path = package.path .. ';' .. package_path_str
 end
@@ -72,40 +72,40 @@ _G.packer_plugins = {
   ["completion-nvim"] = {
     config = { 'require("plugins.completion")' },
     loaded = true,
-    path = "/home/werewolf/.local/share/nvim/site/pack/packer/start/completion-nvim"
+    path = "/home/benning/.local/share/nvim/site/pack/packer/start/completion-nvim"
   },
   firenvim = {
     loaded = true,
-    path = "/home/werewolf/.local/share/nvim/site/pack/packer/start/firenvim"
+    path = "/home/benning/.local/share/nvim/site/pack/packer/start/firenvim"
   },
   ["galaxyline.nvim"] = {
     config = { "\27LJ\2\n2\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\23plugins.galaxyline\frequire\0" },
     loaded = true,
-    path = "/home/werewolf/.local/share/nvim/site/pack/packer/start/galaxyline.nvim"
+    path = "/home/benning/.local/share/nvim/site/pack/packer/start/galaxyline.nvim"
   },
   ["gitsigns.nvim"] = {
     config = { "\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rgitsigns\frequire\0" },
     loaded = true,
-    path = "/home/werewolf/.local/share/nvim/site/pack/packer/start/gitsigns.nvim"
+    path = "/home/benning/.local/share/nvim/site/pack/packer/start/gitsigns.nvim"
   },
   ["monokai.nvim"] = {
     loaded = true,
-    path = "/home/werewolf/.local/share/nvim/site/pack/packer/start/monokai.nvim"
+    path = "/home/benning/.local/share/nvim/site/pack/packer/start/monokai.nvim"
   },
   ["nvim-lastplace"] = {
     config = { 'require("plugins.lastplace")' },
     loaded = true,
-    path = "/home/werewolf/.local/share/nvim/site/pack/packer/start/nvim-lastplace"
+    path = "/home/benning/.local/share/nvim/site/pack/packer/start/nvim-lastplace"
   },
   ["nvim-lspconfig"] = {
     config = { 'require("plugins.lspconfig")' },
     loaded = true,
-    path = "/home/werewolf/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
+    path = "/home/benning/.local/share/nvim/site/pack/packer/start/nvim-lspconfig"
   },
   ["nvim-tree.lua"] = {
-    config = { "\27LJ\2\nY\0\0\3\0\4\0\n6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\0016\0\0\0'\2\3\0B\0\2\1K\0\1\0\22plugins.nvim-tree\nsetup\14nvim-tree\frequire\0" },
+    config = { "\27LJ\2\n1\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\22plugins.nvim-tree\frequire\0" },
     loaded = true,
-    path = "/home/werewolf/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
+    path = "/home/benning/.local/share/nvim/site/pack/packer/start/nvim-tree.lua"
   },
   ["nvim-treesitter"] = {
     after = { "nvim-ts-rainbow" },
@@ -117,43 +117,47 @@ _G.packer_plugins = {
     load_after = {},
     loaded = true,
     needs_bufread = false,
-    path = "/home/werewolf/.local/share/nvim/site/pack/packer/opt/nvim-ts-rainbow"
+    path = "/home/benning/.local/share/nvim/site/pack/packer/opt/nvim-ts-rainbow"
   },
   ["nvim-web-devicons"] = {
     loaded = true,
-    path = "/home/werewolf/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
+    path = "/home/benning/.local/share/nvim/site/pack/packer/start/nvim-web-devicons"
   },
   ["packer.nvim"] = {
     loaded = true,
-    path = "/home/werewolf/.local/share/nvim/site/pack/packer/start/packer.nvim"
+    path = "/home/benning/.local/share/nvim/site/pack/packer/start/packer.nvim"
   },
   ["plenary.nvim"] = {
     loaded = true,
-    path = "/home/werewolf/.local/share/nvim/site/pack/packer/start/plenary.nvim"
+    path = "/home/benning/.local/share/nvim/site/pack/packer/start/plenary.nvim"
   },
   ["telescope.nvim"] = {
     loaded = true,
-    path = "/home/werewolf/.local/share/nvim/site/pack/packer/start/telescope.nvim"
+    path = "/home/benning/.local/share/nvim/site/pack/packer/start/telescope.nvim"
   },
   ultisnips = {
     loaded = true,
-    path = "/home/werewolf/.local/share/nvim/site/pack/packer/start/ultisnips"
+    path = "/home/benning/.local/share/nvim/site/pack/packer/start/ultisnips"
   },
   ["vim-snippets"] = {
     loaded = true,
-    path = "/home/werewolf/.local/share/nvim/site/pack/packer/start/vim-snippets"
+    path = "/home/benning/.local/share/nvim/site/pack/packer/start/vim-snippets"
   }
 }
 
 time([[Defining packer_plugins]], false)
--- Config for: galaxyline.nvim
-time([[Config for galaxyline.nvim]], true)
-try_loadstring("\27LJ\2\n2\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\23plugins.galaxyline\frequire\0", "config", "galaxyline.nvim")
-time([[Config for galaxyline.nvim]], false)
 -- Config for: nvim-treesitter
 time([[Config for nvim-treesitter]], true)
 require("plugins.nvim-treesitter")
 time([[Config for nvim-treesitter]], false)
+-- Config for: galaxyline.nvim
+time([[Config for galaxyline.nvim]], true)
+try_loadstring("\27LJ\2\n2\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\23plugins.galaxyline\frequire\0", "config", "galaxyline.nvim")
+time([[Config for galaxyline.nvim]], false)
+-- Config for: completion-nvim
+time([[Config for completion-nvim]], true)
+require("plugins.completion")
+time([[Config for completion-nvim]], false)
 -- Config for: nvim-lspconfig
 time([[Config for nvim-lspconfig]], true)
 require("plugins.lspconfig")
@@ -164,12 +168,8 @@ try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K
 time([[Config for gitsigns.nvim]], false)
 -- Config for: nvim-tree.lua
 time([[Config for nvim-tree.lua]], true)
-try_loadstring("\27LJ\2\nY\0\0\3\0\4\0\n6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\0016\0\0\0'\2\3\0B\0\2\1K\0\1\0\22plugins.nvim-tree\nsetup\14nvim-tree\frequire\0", "config", "nvim-tree.lua")
+try_loadstring("\27LJ\2\n1\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\22plugins.nvim-tree\frequire\0", "config", "nvim-tree.lua")
 time([[Config for nvim-tree.lua]], false)
--- Config for: completion-nvim
-time([[Config for completion-nvim]], true)
-require("plugins.completion")
-time([[Config for completion-nvim]], false)
 -- Config for: nvim-lastplace
 time([[Config for nvim-lastplace]], true)
 require("plugins.lastplace")
