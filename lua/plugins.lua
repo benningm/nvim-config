@@ -45,16 +45,24 @@ return require('packer').startup(function()
       require("plugins.nvim-tree")
     end
   }
+
   use {
     'neovim/nvim-lspconfig',
     config = 'require("plugins.lspconfig")',
   }
+  use {
+    'hrsh7th/nvim-cmp',
+    config = 'require("plugins.cmp")',
+    requires = {
+      'hrsh7th/cmp-nvim-lsp',
+      'hrsh7th/cmp-buffer',
+      'quangnguyen30192/cmp-nvim-ultisnips'
+    }
+  }
+
   use { 'honza/vim-snippets' }
   use { 'SirVer/ultisnips' }
-  use {
-    'nvim-lua/completion-nvim',
-    config = 'require("plugins.completion")',
-  }
+
   use {
     'nvim-telescope/telescope.nvim',
     requires = { {'nvim-lua/plenary.nvim'} }
