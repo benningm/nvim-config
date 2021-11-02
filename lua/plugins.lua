@@ -51,6 +51,13 @@ return require('packer').startup(function()
     config = 'require("plugins.lspconfig")',
   }
   use {
+    "folke/trouble.nvim",
+    requires = "kyazdani42/nvim-web-devicons",
+    config = function()
+      require("trouble").setup {}
+    end
+  }
+  use {
     'hrsh7th/nvim-cmp',
     config = 'require("plugins.cmp")',
     requires = {

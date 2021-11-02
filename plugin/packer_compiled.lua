@@ -147,6 +147,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/benning/.local/share/nvim/site/pack/packer/start/telescope.nvim"
   },
+  ["trouble.nvim"] = {
+    config = { "\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\ftrouble\frequire\0" },
+    loaded = true,
+    path = "/home/benning/.local/share/nvim/site/pack/packer/start/trouble.nvim"
+  },
   ultisnips = {
     loaded = true,
     path = "/home/benning/.local/share/nvim/site/pack/packer/start/ultisnips"
@@ -158,6 +163,14 @@ _G.packer_plugins = {
 }
 
 time([[Defining packer_plugins]], false)
+-- Config for: nvim-treesitter
+time([[Config for nvim-treesitter]], true)
+require("plugins.nvim-treesitter")
+time([[Config for nvim-treesitter]], false)
+-- Config for: nvim-lastplace
+time([[Config for nvim-lastplace]], true)
+require("plugins.lastplace")
+time([[Config for nvim-lastplace]], false)
 -- Config for: gitsigns.nvim
 time([[Config for gitsigns.nvim]], true)
 try_loadstring("\27LJ\2\n6\0\0\3\0\3\0\0066\0\0\0'\2\1\0B\0\2\0029\0\2\0B\0\1\1K\0\1\0\nsetup\rgitsigns\frequire\0", "config", "gitsigns.nvim")
@@ -166,10 +179,10 @@ time([[Config for gitsigns.nvim]], false)
 time([[Config for nvim-lspconfig]], true)
 require("plugins.lspconfig")
 time([[Config for nvim-lspconfig]], false)
--- Config for: nvim-treesitter
-time([[Config for nvim-treesitter]], true)
-require("plugins.nvim-treesitter")
-time([[Config for nvim-treesitter]], false)
+-- Config for: trouble.nvim
+time([[Config for trouble.nvim]], true)
+try_loadstring("\27LJ\2\n9\0\0\3\0\3\0\a6\0\0\0'\2\1\0B\0\2\0029\0\2\0004\2\0\0B\0\2\1K\0\1\0\nsetup\ftrouble\frequire\0", "config", "trouble.nvim")
+time([[Config for trouble.nvim]], false)
 -- Config for: nvim-tree.lua
 time([[Config for nvim-tree.lua]], true)
 try_loadstring("\27LJ\2\n1\0\0\3\0\2\0\0046\0\0\0'\2\1\0B\0\2\1K\0\1\0\22plugins.nvim-tree\frequire\0", "config", "nvim-tree.lua")
@@ -182,10 +195,6 @@ time([[Config for galaxyline.nvim]], false)
 time([[Config for nvim-cmp]], true)
 require("plugins.cmp")
 time([[Config for nvim-cmp]], false)
--- Config for: nvim-lastplace
-time([[Config for nvim-lastplace]], true)
-require("plugins.lastplace")
-time([[Config for nvim-lastplace]], false)
 -- Load plugins in order defined by `after`
 time([[Sequenced loading]], true)
 vim.cmd [[ packadd nvim-ts-rainbow ]]
