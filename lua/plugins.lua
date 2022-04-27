@@ -78,4 +78,24 @@ return require('packer').startup(function()
     'ethanholz/nvim-lastplace',
     config = 'require("plugins.lastplace")',
   }
+  use {
+    "nvim-neorg/neorg",
+    config = function()
+      require('neorg').setup {
+        load = {
+          ["core.defaults"] = {},
+          ["core.norg.dirman"] = {
+            config = {
+              workspaces = {
+                notes = "~/notes",
+              }
+            }
+          },
+          ["core.norg.concealer"] = {},
+          ["core.norg.completion"] = {},
+        }
+      }
+    end,
+    requires = "nvim-lua/plenary.nvim"
+  }
 end)
