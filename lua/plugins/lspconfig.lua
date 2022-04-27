@@ -18,3 +18,9 @@ nvim_lsp['puppet'].setup {
     return util.root_pattern(unpack(root_files))(fname) or util.path.dirname(fname)
   end,
 }
+
+local servers = { 'pyright', 'tsserver' }
+for _, lsp in pairs(servers) do
+  require('lspconfig')[lsp].setup {
+  }
+end
