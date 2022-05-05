@@ -92,7 +92,7 @@ return require('packer').startup(function()
             }
           },
           ["core.norg.concealer"] = {},
-          ["core.norg.completion"] = {},
+          --["core.norg.completion"] = {},
         }
       }
     end,
