@@ -88,11 +88,13 @@ return require('packer').startup(function()
             config = {
               workspaces = {
                 notes = "~/notes",
-              }
+              },
+              autochdir = true,
+              index = "index.norg",
             }
           },
           ["core.norg.concealer"] = {},
-          ["core.norg.completion"] = {},
+          -- ["core.norg.completion"] = {},
         }
       }
     end,
