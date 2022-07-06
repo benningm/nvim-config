@@ -31,3 +31,5 @@ vim.o.completeopt = 'menu,menuone,noselect'
 
 -- Avoid showing message extra message when using completion
 vim.opt.shortmess:append('c')
+
+vim.opt.guifont = "DejaVu Sans Mono:h16"

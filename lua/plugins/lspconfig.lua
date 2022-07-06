@@ -68,7 +68,7 @@ nvim_lsp['puppet'].setup {
   end,
 }
 
-local servers = { 'pyright', 'solargraph', 'tsserver' }
+local servers = { 'pyright', 'solargraph', 'tsserver', 'jdtls' }
 for _, lsp in pairs(servers) do
   require('lspconfig')[lsp].setup {
     on_attach = on_attach
