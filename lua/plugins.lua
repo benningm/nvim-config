@@ -79,33 +79,4 @@ return require('packer').startup(function()
     'ethanholz/nvim-lastplace',
     config = 'require("plugins.lastplace")',
   }
-  use {
-    "nvim-neorg/neorg",
-    config = function()
-      require('neorg').setup {
-        load = {
-          ["core.defaults"] = {},
-          ["core.norg.dirman"] = {
-            config = {
-              workspaces = {
-                notes = "~/notes",
-              },
-              autochdir = true,
-              index = "index.norg",
-            }
-          },
-          ["core.norg.concealer"] = {},
-          -- ["core.norg.completion"] = {},
-        }
-      }
-    end,
-    requires = "nvim-lua/plenary.nvim"
-  }
-  use {
-    'goolord/alpha-nvim',
-    requires = { 'kyazdani42/nvim-web-devicons' },
-    config = function ()
-        require'alpha'.setup(require'alpha.themes.startify'.config)
-    end
-  }
 end)
